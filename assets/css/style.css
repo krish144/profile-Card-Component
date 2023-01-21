@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-grayishBlue: hsl(227, 10%, 46%);
+    --color-desaturatedBlue: hsl(229, 23%, 23%);
+    --color-background: hsl(185, 75%, 39%);
+    --color-darkGrey: hsl(0, 0%, 59%);
+    --color-white:#fff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(../img/bg-pattern-top.svg),url(../img/bg-pattern-bottom.svg);   
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 52vw bottom 34.5vh,left 48vw top 52vh;
+    
+}
+
+
+.card{
+   max-width: 400px;
+   height: auto;
+   position: relative;
+   background-color: var(--color-white);
+   border-radius: 14px;
+   margin: 1.7rem;
+}
+
+.pattern-card-img{
+    min-height: 13rem;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.profile-img{
+    position: absolute;
+    top:23.5%;
+    left: 35%;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+}
+
+.name{
+    font-size: 1.8rem;
+    margin-top: 7.2rem;
+    text-align:center;
+    color: var(--color-desaturatedBlue);
+    letter-spacing: 0.5px;
+}
+
+.notifications{
+    margin-left: 0.3rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--color-grayishBlue);
+}
+
+.contry{
+    margin: 0.9rem 0rem 2.4rem;
+    text-align: center;
+    font-size: 1.34rem;
+    color: var(--color-grayishBlue);
+}
+
+hr{
+    border: none;
+   border-top: 0.001rem solid var(--color-darkGrey);
+   opacity: 0.5;
+}
+
+.profile-details{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.2rem 4.6rem;
+}
+
+
+.number{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.description{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-grayishBlue);
+    letter-spacing: 1.8px;
+  
+}
+
+
+@media(max-width:375px){
+    .profile-img{
+        top: 21.5%;
+        left: 31.5%;
+    }
+
+    .profile-details{
+       
+        margin: 2.2rem 2rem;
+    }
+
+}
